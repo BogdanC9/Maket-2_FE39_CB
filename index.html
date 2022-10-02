@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        
+            <p class="text__info">Способ получения</p>
+
+            <div>
+                <label for="city" ></label>
+                <input class="city" type="text" id="city" name="city" placeholder="Город" required>
+            </div>
+
+            <div class="user__group">
+                
+                <select class="user" name="user_post" placeholder="Почта России"  required>
+                    <div class="down"> </div>
+                    <option value="ПочтаРоссии">Почта России </option>
+                    <option value="Amazon ">Amazon </option>
+                    <option value="NovaPoshta">NovaPoshta</option>
+                </select>
+                
+            </div>      
+            
+            <div class="all">
+                <label for="street" ></label>
+                <input class="street" type="text" id="street" name="street" placeholder="Улица" required>
+
+                <label for="home" ></label>
+                <input class="home" type="text" id="home" name="home" placeholder="Дом" required>
+
+                <label for="flat" ></label>
+                <input class="flat" type="text" id="flat" name="flat" placeholder="Квартира" required>
+
+                <label for="index" ></label>
+                <input class="index" type="text" id="index" name="index" placeholder="Индекс" required>
+            </div>
+            
+            <label for="comment" ></label>
+            <input class="comment" type="text" id="comment" name="comment" placeholder="Добавить комментарий" > 
+
+            <p class="info">Данные получателя</p>
+
+            <label for="fname" ></label>
+            <input class="fname" type="text" id="fname" name="fname" placeholder="Фамилия" required>
+
+            <label for="lname" ></label>
+            <input class="lname" type="text" id="lname" name="lname" placeholder="Имя" required>
+
+            <label for="patronymic" ></label>
+            <input class="patronymic" type="text" id="patronymic" name="patronymic" placeholder="Отчество" required>
+
+            <div class="tel">
+                <label for="phone"></label>
+                <input class="phone" type="tel" id="phone" name="phone" placeholder="Номер телефона" required>
+            </div>
+
+            <p class="tel__text">По этому номеру телефона мы с вяжемся с вами для подтверждения заказа</p>
+
+
+            <div>
+                <label for="email"></label>
+                <input class="email" type="email" id="email" pattern="@gmail.com"  placeholder="E-mail" required>
+            </div>
+            <p class="email__text"> На эту почту вам придет письмо с составом заказа, а так же трэк-номер для его отслеживания</p>
+
+            <div class="checkboxes__item">
+                <label class="checkbox style-a">
+                    <input type="checkbox"/>
+                    <div class="checkbox__checkmark"></div>
+                    <div class="checkbox__body">Подписаться на рассылку новинок и акций</div>
+                </label>
+            </div>
+
+             <p class="user_pay">Способ оплаты</p>
+            <div class="radio_fm">
+                <div class="radio">
+                    <input class="radio__input" type="radio" id="pay" name="pay" value="pay" >
+                    <label class="radio__label" for="pay">Оплата при получении наличными или картой</label>
+                </div>
+
+                 <div class="radio">
+                    <input class="radio__input" type="radio" id="card" name="pay" value="card" checked>
+                    <label class="radio__label" for="card">Оплата банковской картой онлайн</label>
+                </div>
+            </div>
+    </div>
+</body>
+</html>
