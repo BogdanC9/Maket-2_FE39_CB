@@ -51,7 +51,24 @@ body{
     margin-bottom: 24px;
     padding-left: 24px;
     appearance: none;
-       
+    position: relative;
+}
+.user__group {
+    width: fit-content;
+    position: relative;
+}
+
+.user__group::before {
+    content: '';
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    z-index: 2;
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    transform: rotate(-90deg);
+    background-image: url('https://cdn-icons-png.flaticon.com/512/2223/2223615.png');
 }
 
 
